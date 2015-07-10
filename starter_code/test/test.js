@@ -6,13 +6,6 @@ cheerio = require('cheerio')
 
 var baseUrl = 'http://localhost:3000';
 
-// DESCRIBE WHAT WE ARE TESTING
-  // SAY WHAT BEHAVIOR 'IT' AUGHT TO HAVE
-    // SEND THE REQUEST
-      // USE CHAI-EXPECT TO EXPECT THE STATUS RESULT
-      // CHECK FALSE VALUE TO SEE IF WE CAN MAKE TEST FAIL
-      // CALL DONE();
-
 describe('Catchphrasely Title', function() {
   it('should have "Catchphrasely" in title', function(done) {
     request(baseUrl, function(err, res, body) {
